@@ -63,43 +63,53 @@
                 Paribahan</span></h1>
             <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated
               testing features allow for a streamlined .</p>
-            <button class="btn bg-[#1DD100] border-none p-5">Buy Ticket</button>
+            <a href="#ticket-section"><button class="btn bg-[#1DD100] border-none p-5">Buy Ticket</button></a>
+
           </div>
         </div>
       </div>
     </div>
   </header>
   <main>
-    <section class="max-w-[1170px] mx-auto mb-32">
-      <h1 class="text-center">Best offers for you</h1>
-      <div class="flex flex-col lg:flex-row justify-between">
+    <section class="max-w-[1170px] mx-auto mb-32 text-black ">
+      <h1 class="text-center text-4xl font-bold">Best offers for you</h1>
+      <div class="flex flex-col lg:flex-row justify-between my-12 space-y-3 lg:gap-6 ">
         <!-- card 1 -->
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+        <div class="flex bg-[#FFBF0F] max-w-[573px] rounded-2xl  lg:h-[220px] ">
+          <div class="flex flex-col justify-center items-center p-14 w-[318px] border-r-2 border-dotted border-white">
+            <h2 class="text-4xl font-extrabold">15% OFF</h2>
+            <h3 class="text-lg font-semibold">On Your Next Purchase</h3>
+            <h4>Used by January 2024</h4>
+          </div>
+          <div class="flex flex-col justify-center items-center p-14">
+
+            <h2 id="coupon" class="text-4xl font-extrabold">NEW15</h2>
+            <h4 class="text-lg font-semibold">COUPON CODE</h4>
           </div>
         </div>
         <!-- card 2 -->
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">Card title!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="card-actions justify-end">
-              <button class="btn btn-primary">Buy Now</button>
-            </div>
+
+
+        <div class="flex bg-[#F78C9C] max-w-[573px] rounded-2xl lg:h-[220px] ">
+          <div class="flex flex-col justify-center items-center p-14 w-[318px] border-r-2 border-dotted border-white">
+            <h2 class="text-4xl font-extrabold">20% OFF</h2>
+            <h3 class="text-lg font-semibold">On Your Next Purchase</h3>
+            <h4>Used by January 2024</h4>
+          </div>
+          <div class="flex flex-col justify-center items-center p-14">
+
+            <h2 id="coupon" class="text-4xl font-extrabold">COUPLE20</h2>
+            <h4 class="text-lg font-semibold">COUPON CODE</h4>
           </div>
         </div>
       </div>
+      
       <div class="text-center">
         <button class="btn">See All Offers</button>
       </div>
     </section>
     <!-- ticketing section -->
-    <section class="border-t-2 border-[#1DD100] rounded-3xl bg-[#F7F8F8]">
+    <section id="ticket-section" class="border-t-2 border-[#1DD100] rounded-3xl bg-[#F7F8F8]">
       <div class="max-w-[1170px] mx-auto ">
         <div class="text-center mt-40 mb-12">
           <h1 class="text-black text-5xl font-bold mb-6">Luxury Paribahan</h1>
@@ -119,24 +129,25 @@
               </div>
               <div class="flex gap-2 text-lime-500 bg-lime-100 w-[180px] items-center justify-center rounded-xl">
                 <img src="images/seat-green.png" alt="">
-                <p>40 Seats left</p>
+                <!-- total seat -->
+                <p><span id="left-seat">40</span> Seats left</p>
               </div>
             </div>
 
             <div class="p-8 rounded-xl bg-[#F7F8F8]">
               <div class="flex justify-between mb-6">
-                <h3 >Route</h3>
-              <h3 class="text-black text-lg font-semibold">Dhaka-Noakhali</h3>
-            </div>
-            <hr>
+                <h3>Route</h3>
+                <h3 class="text-black text-lg font-semibold">Dhaka-Noakhali</h3>
+              </div>
+              <hr>
               <div class="flex justify-between my-6">
-                <h3 >Departure Time</h3>
+                <h3>Departure Time</h3>
                 <h3 class="text-black text-lg font-semibold">9:00 PM</h3>
               </div>
               <hr>
               <div class="mt-5 flex  gap-2 lg:gap-6">
                 <button class="btn w-[100px] lg:w-[230px]">Boarding Point - Laxmipur</button>
-                <button class="btn w-[100px] lg:w-[230px]" >Droping Point Dhaka</button>
+                <button class="btn w-[100px] lg:w-[230px]">Droping Point Dhaka</button>
                 <button class="btn w-[100px] lg:w-[230px]">Est. Time - 11 Hour</button>
               </div>
             </div>
@@ -175,69 +186,51 @@
             <div class="flex justify-between">
               <div class="grid grid-cols-2 grid-rows-10 gap-4">
 
-                <button class="btn lg:w-28">A1</button>
-                <button class="btn lg:w-28">A2</button>
-
-                <button class="btn lg:w-28">B1</button>
-                <button class="btn lg:w-28">B2</button>
-
-                <button class="btn lg:w-28">C1</button>
-                <button class="btn lg:w-28">C2</button>
-
-                <button class="btn lg:w-28">D1</button>
-                <button class="btn lg:w-28">D2</button>
-
-                <button class="btn lg:w-28">E1</button>
-                <button class="btn lg:w-28">E2</button>
-
-                <button class="btn lg:w-28">F1</button>
-                <button class="btn lg:w-28">F2</button>
-
-                <button class="btn lg:w-28">G1</button>
-                <button class="btn lg:w-28">G2</button>
-
-                <button class="btn lg:w-28">H1</button>
-                <button class="btn lg:w-28">H2</button>
-
-                <button class="btn lg:w-28">I1</button>
-                <button class="btn lg:w-28">I2</button>
-
-                <button class="btn lg:w-28">J1</button>
-                <button class="btn lg:w-28">J2</button>
+                <button class="btn-click btn lg:w-28">A1</button>
+                <button class="btn-click btn lg:w-28">A2</button>
+                <button class="btn-click btn lg:w-28">B1</button>
+                <button class="btn-click btn lg:w-28">B2</button>
+                <button class="btn-click btn lg:w-28">C1</button>
+                <button class="btn-click btn lg:w-28">C2</button>
+                <button class="btn-click btn lg:w-28">D1</button>
+                <button class="btn-click btn lg:w-28">D2</button>
+                <button class="btn-click btn lg:w-28">E1</button>
+                <button class="btn-click btn lg:w-28">E2</button>
+                <button class="btn-click btn lg:w-28">F1</button>
+                <button class="btn-click btn lg:w-28">F2</button>
+                <button class="btn-click btn lg:w-28">G1</button>
+                <button class="btn-click btn lg:w-28">G2</button>
+                <button class="btn-click btn lg:w-28">H1</button>
+                <button class="btn-click btn lg:w-28">H2</button>
+                <button class="btn-click btn lg:w-28">I1</button>
+                <button class="btn-click btn lg:w-28">I2</button>
+                <button class="btn-click btn lg:w-28">J1</button>
+                <button class="btn-click btn lg:w-28">J2</button>
 
 
               </div>
               <div class="grid grid-cols-2 grid-rows-10 gap-4">
-                <button class="btn lg:w-28">A3</button>
-                <button class="btn lg:w-28">A4</button>
 
-                <button class="btn lg:w-28">B3</button>
-                <button class="btn lg:w-28">B4</button>
-
-
-                <button class="btn lg:w-28">C3</button>
-                <button class="btn lg:w-28">C4</button>
-
-                <button class="btn lg:w-28">D3</button>
-                <button class="btn lg:w-28">D4</button>
-
-                <button class="btn lg:w-28">E3</button>
-                <button class="btn lg:w-28">E4</button>
-
-                <button class="btn lg:w-28">F3</button>
-                <button class="btn lg:w-28">F4</button>
-
-                <button class="btn lg:w-28">G3</button>
-                <button class="btn lg:w-28">G4</button>
-
-                <button class="btn lg:w-28">H3</button>
-                <button class="btn lg:w-28">H4</button>
-
-                <button class="btn lg:w-28">I3</button>
-                <button class="btn lg:w-28">I4</button>
-
-                <button class="btn lg:w-28">J3</button>
-                <button class="btn lg:w-28">J4</button>
+                <button class="btn-click btn lg:w-28">A3</button>
+                <button class="btn-click btn lg:w-28">A4</button>
+                <button class="btn-click btn lg:w-28">B3</button>
+                <button class="btn-click btn lg:w-28">B4</button>
+                <button class="btn-click btn lg:w-28">C3</button>
+                <button class="btn-click btn lg:w-28">C4</button>
+                <button class="btn-click btn lg:w-28">D3</button>
+                <button class="btn-click btn lg:w-28">D4</button>
+                <button class="btn-click btn lg:w-28">E3</button>
+                <button class="btn-click btn lg:w-28">E4</button>
+                <button class="btn-click btn lg:w-28">F3</button>
+                <button class="btn-click btn lg:w-28">F4</button>
+                <button class="btn-click btn lg:w-28">G3</button>
+                <button class="btn-click btn lg:w-28">G4</button>
+                <button class="btn-click btn lg:w-28">H3</button>
+                <button class="btn-click btn lg:w-28">H4</button>
+                <button class="btn-click btn lg:w-28">I3</button>
+                <button class="btn-click btn lg:w-28">I4</button>
+                <button class="btn-click btn lg:w-28">J3</button>
+                <button class="btn-click btn lg:w-28">J4</button>
 
 
               </div>
@@ -249,29 +242,30 @@
             <h1 class="mb-5 text-black text-2xl font-semibold">Select Your Seat</h1>
             <hr>
             <div class="w-[433px] p-8 bg-[#F7F8F8] rounded-xl mt-5">
-              <div class="grid grid-cols-3 gap-7 mb-7">
-                <h3 class="text-black text-lg font-semibold">Seat</h3>
+              <div id="selected-container" class="grid grid-cols-3 gap-7 mb-7">
+                <h3 class="text-black text-lg font-semibold">Seat <span id="selected-seat"
+                    class="bg-[#1DD100] text-white">0</span></h3>
                 <h3 class="text-black text-lg font-semibold">Class</h3>
                 <h3 class="text-black text-lg font-semibold">Price</h3>
 
-                <p>C1</p>
+                <!-- <p>C1</p>
                 <p>Economy</p>
                 <p>550</p>
                 <p>C2</p>
                 <p>Economy</p>
-                <p>550</p>
+                <p>550</p> -->
 
 
               </div>
               <div class="flex justify-around mb-4">
                 <h3 class="text-black text-lg font-semibold">Total Price</h3>
-                <h3 class="text-black text-lg font-semibold">BDT 1100</h3>
+                <h3 class="text-black text-lg font-semibold">BDT <span id="total-price">0</span></h3>
               </div>
 
               <div class="form-control ">
                 <div class="input-group">
                   <input type="text" placeholder="Have any coupon?" class="input input-bordered w-[280px]" />
-                  <button class="btn bg-[#1DD100] text-white">
+                  <button onclick="updateGrandTotal('apply')" class="btn bg-[#1DD100] text-white">
                     Apply
                   </button>
                 </div>
@@ -279,7 +273,7 @@
 
               <div class="flex justify-around my-4">
                 <h3 class="text-black text-lg font-semibold">Grand Price</h3>
-                <h3 class="text-black text-lg font-semibold">BDT 1100</h3>
+                <h3 class="text-black text-lg font-semibold">BDT <span id="grand-total">0</span></h3>
               </div>
 
             </div>
@@ -307,6 +301,8 @@
   <footer>
 
   </footer>
+
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
