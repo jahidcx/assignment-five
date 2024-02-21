@@ -96,18 +96,28 @@ function updateSelectedSeat (){
     document.getElementById('selected-seat').innerText = updateSelectedSeat; 
 }
 
-// function checkValidation (){
-//     if(seatList.includes(name) === false && seatList.length <= 4){
-//         seatList.push(name);
-//         console.log(seatList);
-//     }
-//     else{
-//         alert('You cannot Buy more than 4 ticket');
-//     }
-// }
 
 function getConvertedValue (id){
     const price = document.getElementById(id).innerText;
     const convertedPrice = parseInt(price);
     return convertedPrice; 
+}
+
+
+function confirmPurchase (){
+    hideElementById('header-part');
+    hideElementById('coupon-section');
+    hideElementById('ticket-section');
+
+    showElementById('confirm-section');
+
+}
+
+function goHome (){
+    showElementById('header-part');
+    showElementById('coupon-section');
+    showElementById('ticket-section');
+
+    hideElementById('confirm-section');
+
 }
